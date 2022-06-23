@@ -1,0 +1,73 @@
+
+/*
+margin-left\right\top\bottom properties to set the margins for each side of the element (top, right, bottom and left).
+grid-auto-columns задает размер неявно созданных столбцов в контейнере сетки макета
+grid-auto-rows задает размер неявно созданных строк
+grid-template-columns определяет колонки сетки с помощью списка значений разделённого пробелами
+Grid представляет собой пересекающийся набор горизонтальных и вертикальных линий — один набор определяет столбцы, а другой строки
+font-size размер шрифта элемента. Набор констант (xx-small, x-small, small, medium, large, x-large, xx-large)
+*/
+
+
+.calc {
+	margin-left: 0px;
+	margin-right: auto;
+	margin-top: 0px;
+	grid-auto-columns: 100px;
+	grid-auto-rows: 100px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
+	width: 500px;
+	height: auto;
+	color: #ffff;
+	font-size: xx-large;
+}
+
+.boxes {
+	background: #67676d;
+	/*цвет и размер сетки*/
+	border:1px solid #2c2b36;
+	text-align:	center;
+}
+
+
+#box1{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background: #525058;
+	/*скругляются границы блока*/
+	border-radius: 10px 10px 0 0;
+	/*размер шрифта в 2.5 раза больше обычного*/
+	font-size: 2.5em;
+	/*положение \ отступ*/
+	padding-left: 75%;
+	padding-top: 5%;
+	font-family: Arial;
+}
+
+#box2, #box3, #box4 {
+	background: #5a5860;
+}
+
+#box5, #box9, #box13, #box17, #box20 {
+	background: #ff9f08;
+}
+
+#box18 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	border-radius: 0 0 0 20px;
+}
+
+#box20 {
+	border-radius: 0 0 20px 0;
+}
+
+.text_box {
+	font-family: Arial;
+	font-size: 1.1em;
+}
